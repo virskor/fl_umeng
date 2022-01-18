@@ -17,7 +17,7 @@
             NSDictionary *crash = args[@"crashMode"];
             if(crash != nil){
                 [NSURLProtocol registerClass:[NSURLProtocol class]];
-                [UMCrashConfigure enableNetworkForProtocol:crash[@"enableNetworkForProtocol"]];
+                // [UMCrashConfigure enableNetworkForProtocol:crash[@"enableNetworkForProtocol"]];
                 UMAPMConfig *config = [UMAPMConfig defaultConfig];
                 config.crashAndBlockMonitorEnable = crash[@"enableCrashAndBlock"];
                 config.launchMonitorEnable = crash[@"enableLaunch"];
